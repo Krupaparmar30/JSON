@@ -1,16 +1,10 @@
 # json
 
 A new Flutter project.
+## **JSON: 
+> A Simple Way to Store and Exchange Data**
 
-## Getting Started
+> **JSON** stands for **JavaScript Object Notation**. It's a lightweight format for storing and transporting data. Think of it as a universal language for computers to understand and share information.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> **JSON Parsing**
+> JSON parsing is the process of converting a JSON object in text format to a Javascript object that can be used inside a program. In Javascript, the standard way to do this is by using the method JSON.

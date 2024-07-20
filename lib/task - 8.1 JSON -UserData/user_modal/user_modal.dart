@@ -4,9 +4,16 @@ class UserModal {
   late Address address;
   late Company company;
 
-  UserModal(
-      {required this.id, required this.name, required this.username, required this.email, required this.phone,
-        required this.website, required this.address, required this.company});
+  UserModal({
+    required this.id,
+    required this.name,
+    required this.username,
+    required this.email,
+    required this.phone,
+    required this.website,
+    required this.address,
+    required this.company
+  });
 
   factory UserModal.fromJson(Map m1)
   {
@@ -16,24 +23,27 @@ class UserModal {
         email: m1['email'],
         phone: m1['phone'],
         website: m1['website'],
-        address: Address.fromJson(m1['Address']),
+        address: Address.fromJson(m1['address']),
         company: Company.fromJson(m1['company']));
   }
 }
 
 class Address {
-  late String street, city, zipcode, suite;
+  late String street, suite, city, zipcode;
   late Geo geo;
 
-  Address(
-      {required this.street, required this.city, required this.zipcode, required this.suite, required this.geo});
+  Address({required this.street,
+    required this.suite,
+    required this.city,
+    required this.zipcode,
+    required this.geo});
 
-  factory Address.fromJson(Map m1)
-  {
-    return Address(street: m1['street'],
+  factory Address.fromJson(Map m1) {
+    return Address(
+        street: m1['street'],
+        suite: m1['suite'],
         city: m1['city'],
         zipcode: m1['zipcode'],
-        suite: m1['suite'],
         geo: Geo.fromJson(m1['geo']));
   }
 }
@@ -44,10 +54,8 @@ class Geo {
   Geo({required this.lat, required this.lng});
 
   factory Geo.fromJson(Map m1) {
-    return Geo(
-        lat: m1['lat'], lng: m1['lng']);
+    return Geo(lat: m1['lat'], lng: m1['lng']);
   }
-
 }
 
 class Company {

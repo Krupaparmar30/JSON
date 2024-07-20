@@ -10,11 +10,28 @@ class userPage extends StatelessWidget {
   Widget build(BuildContext context) {
     UserProvider userProvider =Provider.of<UserProvider>(context);
     return Scaffold(
-body: ListView.builder(
+body:
+
+ListView.builder(
   itemCount: userProvider.userList.length,
-  itemBuilder: (context, index) => ListTile(
+  itemBuilder: (context, index) =>
 
-  title: Text(userProvider.userList[index].name),
+     Card(
+       color: Colors.grey.shade100,
+       child:  ListTile(
+
+         title: Text(userProvider.userList[index].name),
+         subtitle: Text(userProvider.userList[index].username),
+
+         trailing: Column(
+           mainAxisAlignment: MainAxisAlignment.center,
+           children: [
+             Text(userProvider.userList[index].company.name),
+             Text(userProvider.userList[index].address.city)
+             // Text(userProvider.userList[index].address.geo.lat)
+
+           ],
+         ),
 
 
 
@@ -24,7 +41,8 @@ body: ListView.builder(
 
 
 
-),),
+       ),
+     )),
     );
   }
 }

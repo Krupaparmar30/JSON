@@ -24,21 +24,23 @@ class json_and_json_parsing extends StatelessWidget {
         ),
         body: ListView.builder(
           itemCount: photoProviderFalse.photoesList.length,
-          itemBuilder: (context, index) => ListTile(
-            title: Text(photoProviderFalse.photoesList[index].title),
-
-            leading: Container(
-              height: height*0.2,
-              width: width*0.2,
-              decoration: BoxDecoration(
-                  color: Colors.pink,
-                  image: DecorationImage(
-                      image:
-                      //  NetworkImage(photoProviderFalse.photoesList[index].url),
-                      NetworkImage(photoProviderFalse.photoesList[index].url),
-                      fit: BoxFit.cover
-
-                  )
+          itemBuilder: (context, index) => Card(
+            color: Colors.grey.shade100,
+            child: ListTile(
+              title: Text(photoProviderFalse.photoesList[index].title),
+            
+              leading: Container(
+                height: height*0.180,
+                width: width*0.2,
+                decoration: BoxDecoration(
+                    color: Colors.pink,
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                        image: NetworkImage(photoProviderFalse.photoesList[index].url),
+                        fit: BoxFit.cover
+            
+                    )
+                ),
               ),
             ),
           ),

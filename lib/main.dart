@@ -3,9 +3,11 @@ import 'package:json/task%20-%208.1%20JSON%20&%20JSON%20Parsing/provider/json_pr
 import 'package:json/task%20-%208.1%20JSON%20&%20JSON%20Parsing/view/JSON%20&%20JSON%20Parsing/json_and_json_parsing.dart';
 import 'package:json/task%20-%208.1%20JSON%20-UserData/user_page/user_page.dart';
 import 'package:json/task%20-%208.1%20JSON%20-UserData/user_provider/user_provider.dart';
-import 'package:json/task%20-%208.3%20JSON%20-Postes/post_page/post_page.dart';
-import 'package:json/task%20-%208.3%20JSON%20-Postes/post_provider/post_provider.dart';
+
 import 'package:provider/provider.dart';
+
+import 'task - 8.3 JSON - PostData/post_page/post_page.dart';
+import 'task - 8.3 JSON - PostData/post_provider/post_provider.dart';
 
 void main() {
   runApp(MyApp());

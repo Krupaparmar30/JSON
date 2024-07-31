@@ -1,6 +1,9 @@
+import 'dart:math';
+
 class PostModal {
-  late int total, skip, limit;
   late List<Post> posts;
+
+  late int total, skip, limit;
 
   PostModal(
       {required this.total, required this.skip, required this.limit, required this.posts});
@@ -10,7 +13,8 @@ class PostModal {
     return PostModal(total: m1['total'],
         skip: m1['skip'],
         limit: m1['limit'],
-        posts: (m1['posts'] as List).map((e)=>Post.fromJson(e)).toList());
+        // posts: (m1['posts'] as List).map((e)=>Post.fromJson(e)).toList());
+        posts:(m1['posts'] as List).map((e)=>Post.fromJson(e)).toList());
   }
 }
 
@@ -46,6 +50,6 @@ class Reactions {
   Reactions({required this.like, required this.dislikes});
 
   factory Reactions.fromJson(Map m1) {
-    return Reactions(like: m1['like'], dislikes: m1['dislikes']);
+    return Reactions(like: m1['likes'], dislikes: m1['dislikes']);
   }
 }

@@ -26,3 +26,10 @@ https://github.com/user-attachments/assets/2eeb1234-c3e8-4302-9171-2b9606b6eb5e
 
 https://github.com/user-attachments/assets/76c39489-a244-4d81-a783-aaab0e1d0cf3
 
+# JSON PostData
+ <img src="https://github.com/user-attachments/assets/8eda9258-f455-4e6c-ab7a-0e5245fe88b0" height=28% width=32%>
+
+
+https://github.com/user-attachments/assets/2143653e-4860-4858-9e97-ca778b7e4df3
+
+
